@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.Map;
 import java.util.Optional;
 
 
@@ -94,4 +95,16 @@ public class AuthController {
         return new ResponseEntity<>(userDto, HttpStatus.OK);
 
     }
+
+
+    @PostMapping("activation")
+    public ResponseEntity<?> activateUser(@RequestBody Map<String, String> activation){
+        this.authService.accountActivation(activation);
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+
+
+
 }
