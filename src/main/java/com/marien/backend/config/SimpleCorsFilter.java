@@ -17,9 +17,11 @@ import java.util.Map;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class SimpleCorsFilter implements Filter {
 
-
+   /*
     @Value("${app.client.url}")
     private String clientAppUrl= "";
+
+    */
 
     public SimpleCorsFilter() {
     }
@@ -53,4 +55,8 @@ public class SimpleCorsFilter implements Filter {
     public void destroy() {
         Filter.super.destroy();
     }
+
+
+    // Add cors filter
+
 }
