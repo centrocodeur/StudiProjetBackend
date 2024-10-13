@@ -62,7 +62,7 @@ public class WebSecurityConfiguration {
         CorsConfiguration config= new CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOrigin("https://ticketparis24.netlify.app/"); // for production
-        //config.addAllowedOrigin("http://localhost:4200"); // for dev
+        config.addAllowedOrigin("http://localhost:4200"); // for dev
         config.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
                 HttpHeaders.CONTENT_TYPE,
