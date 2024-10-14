@@ -17,11 +17,12 @@ import java.util.Map;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class SimpleCorsFilter implements Filter {
 
-   /*
+   
     @Value("${app.client.url}")
     private String clientAppUrl= "";
 
-    */
+    @Value("${app.admin.url}")
+    private String adminAppUrl= "";
 
     public SimpleCorsFilter() {
     }
