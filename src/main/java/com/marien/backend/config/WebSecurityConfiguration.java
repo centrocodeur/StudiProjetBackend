@@ -56,6 +56,7 @@ public class WebSecurityConfiguration {
     }
 
 
+
     @Bean
     public FilterRegistrationBean corsFilter(){
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -82,5 +83,7 @@ public class WebSecurityConfiguration {
         bean.setOrder(-102);
         return bean;
     }
+
+
 
 }
