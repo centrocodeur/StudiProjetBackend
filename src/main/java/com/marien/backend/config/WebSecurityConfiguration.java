@@ -65,7 +65,6 @@ public class WebSecurityConfiguration {
         config.addAllowedOrigin("https://billet-jo-paris2024.netlify.app/"); // for production
         config.addAllowedOrigin("https://adminticketparisjo24.netlify.app/");
         config.addAllowedOrigin("http://localhost:4200"); // for dev
-       // config.addAllowedOrigin("http://localhost:52809"); // for dev
         config.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
                 HttpHeaders.CONTENT_TYPE,
