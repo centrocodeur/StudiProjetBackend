@@ -21,6 +21,9 @@ public class SimpleCorsFilter implements Filter {
     @Value("${app.client.url}")
     private String clientAppUrl= "";
 
+    @Value("app.clientfinal")
+    private String clientFinalAppUrl="";
+
     @Value("${app.admin.url}")
     private String adminAppUrl= "";
 
