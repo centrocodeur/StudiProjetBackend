@@ -24,13 +24,8 @@ public class SimpleCorsFilter implements Filter {
     @Value("${app.admin.url}")
     private String adminAppUrl= "";
 
-
-
-
-
     public SimpleCorsFilter() {
     }
-
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
