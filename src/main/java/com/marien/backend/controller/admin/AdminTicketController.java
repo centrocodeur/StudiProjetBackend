@@ -27,6 +27,7 @@ public class AdminTicketController {
     private final FAQService faqService;
 
 
+
     @PostMapping("/ticket")
     public ResponseEntity<TicketDto> addTicket(@ModelAttribute TicketDto ticketDto) throws IOException {
 
